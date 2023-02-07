@@ -23,10 +23,11 @@ Researchers and physicians rely on neural networks to help them diagnose maligna
 Follow the steps below to build a simple neural network with scikit-learn! Remember, that even as we build out our model, we will be looking for valuable information that we can use to better explain our results.
 
 ### 1. Import Data
-In the cell below, we use an `from <library>.<module> import <object>` syntax to import the necessary function to load our data. Then, we assign it to the `data` variable. 
+In the cell below, we import the necessary function to load our data. Then, we assign it to the `data` variable.
 
 
 ```python
+
 from sklearn.datasets import load_breast_cancer
 
 # load the dataset
@@ -447,11 +448,11 @@ print(pd.DataFrame(exp.as_list(),columns=['Feature','Contribution']))
 ```
 
                                   Feature  Contribution
-    0  516.45 < perimeter_worst <= 686.60     -0.007623
-    1      84.25 < texture_worst <= 97.67     -0.005705
-    2       75.10 < texture_mean <= 85.98     -0.004588
-    3   420.30 < perimeter_mean <= 551.70     -0.004174
-    4          0.00 < symmetry_se <= 0.00      0.002985
+    0  516.45 < perimeter_worst <= 686.60     -0.004829
+    1      0.10 < concavity_worst <= 0.16      0.003980
+    2      84.25 < texture_worst <= 97.67     -0.003704
+    3       75.10 < texture_mean <= 85.98     -0.003152
+    4       21.05 < radius_worst <= 25.22     -0.002950
 
 
 ## Combining Explanations
